@@ -37,7 +37,6 @@ public class Order implements Identifiable {
     public boolean isComplete() {
         return isComplete;
     }
-    
     public void markComplete() {
         setComplete(true);
     }
