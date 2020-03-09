@@ -5,14 +5,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import org.hibernate.mapping.IdGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.service.Identifiable;
+
 
 public abstract class InMemoryRepo<T extends Identifiable> {
 
     @Autowired
-    private IdGenerator idGenerator;
+   private IdGenerator idGenerator;
 
     private List<T> elements = Collections.synchronizedList(new ArrayList<>());
 
