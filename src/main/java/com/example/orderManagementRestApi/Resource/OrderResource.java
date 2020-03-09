@@ -3,8 +3,11 @@ package com.example.orderManagementRestApi.Resource;
 import com.example.orderManagementRestApi.domain.Order;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
+import org.springframework.hateoas.RepresentationModel;
 
-public class OrderResource extends ResourceSupport{
+
+
+public class OrderResource extends RepresentationModel {
 
     @JsonUnwrapped
     private Order order;
